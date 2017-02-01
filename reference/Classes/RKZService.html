@@ -1,0 +1,4424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>RKZService Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BaaSAtRakuza </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">People Software Corporation</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/initialized">initialized</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/sharedInstance">+ sharedInstance</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/setTenantKey:">- setTenantKey:</option>
+		
+		<option value="//api/name/getLocaleList:sortConditionArray:withBlock:">- getLocaleList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/setLocale:">- setLocale:</option>
+		
+		<option value="//api/name/getLocale">- getLocale</option>
+		
+		<option value="//api/name/getData:code:withBlock:">- getData:code:withBlock:</option>
+		
+		<option value="//api/name/getDataList:searchConditionArray:sortConditionArray:withBlock:">- getDataList:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/addData:withBlock:">- addData:withBlock:</option>
+		
+		<option value="//api/name/editData:withBlock:">- editData:withBlock:</option>
+		
+		<option value="//api/name/deleteData:code:withBlock:">- deleteData:code:withBlock:</option>
+		
+		<option value="//api/name/deleteData:searchConditions:withBlock:">- deleteData:searchConditions:withBlock:</option>
+		
+		<option value="//api/name/getNews:withBlock:">- getNews:withBlock:</option>
+		
+		<option value="//api/name/getNews:tenantId:withBlock:">- getNews:tenantId:withBlock:</option>
+		
+		<option value="//api/name/getReleasedNewsList:searchConditionArray:sortConditionArray:withBlock:">- getReleasedNewsList:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getNewsList:searchConditionArray:sortConditionArray:withBlock:">- getNewsList:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getNewsReadHistory:userAccessToken:withBlock:">- getNewsReadHistory:userAccessToken:withBlock:</option>
+		
+		<option value="//api/name/getNewsReadHistory:tenantId:userAccessToken:withBlock:">- getNewsReadHistory:tenantId:userAccessToken:withBlock:</option>
+		
+		<option value="//api/name/getNewsReadHistoryList:withBlock:">- getNewsReadHistoryList:withBlock:</option>
+		
+		<option value="//api/name/registNewsReadHistory:userAccessToken:readDate:withBlock:">- registNewsReadHistory:userAccessToken:readDate:withBlock:</option>
+		
+		<option value="//api/name/registNewsReadHistory:tenantId:userAccessToken:readDate:withBlock:">- registNewsReadHistory:tenantId:userAccessToken:readDate:withBlock:</option>
+		
+		<option value="//api/name/registPushDeviceToken:deviceToken:withBlock:">- registPushDeviceToken:deviceToken:withBlock:</option>
+		
+		<option value="//api/name/getCoupon:withBlock:">- getCoupon:withBlock:</option>
+		
+		<option value="//api/name/getCouponList:sortConditionArray:withBlock:">- getCouponList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/exchangeCoupon:couponCd:quantity:withBlock:">- exchangeCoupon:couponCd:quantity:withBlock:</option>
+		
+		<option value="//api/name/useMyCoupon:myCouponData:withBlock:">- useMyCoupon:myCouponData:withBlock:</option>
+		
+		<option value="//api/name/getMyCoupon:myCouponCd:withBlock:">- getMyCoupon:myCouponCd:withBlock:</option>
+		
+		<option value="//api/name/getMyCouponList:searchConditionArray:sortConditionArray:withBlock:">- getMyCouponList:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getContactList:searchConditionArray:sortConditionArray:withBlock:">- getContactList:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/addContact:contactData:withBlock:">- addContact:contactData:withBlock:</option>
+		
+		<option value="//api/name/getApplicationSettingDataWithBlock:">- getApplicationSettingDataWithBlock:</option>
+		
+		<option value="//api/name/getSystemDateWithBlock:">- getSystemDateWithBlock:</option>
+		
+		<option value="//api/name/getSystemDateStrWithBlock:">- getSystemDateStrWithBlock:</option>
+		
+		<option value="//api/name/getSystemDate">- getSystemDate</option>
+		
+		<option value="//api/name/getSystemDateStr">- getSystemDateStr</option>
+		
+		<option value="//api/name/getBeaconList:sortConditionArray:withBlock:">- getBeaconList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getBeaconSpotList:sortConditionArray:withBlock:">- getBeaconSpotList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/addDetectBeaconContact:beaconId:contactDate:beaconSpotCd:rssi:remarks:withBlock:">- addDetectBeaconContact:beaconId:contactDate:beaconSpotCd:rssi:remarks:withBlock:</option>
+		
+		<option value="//api/name/getDetectBeaconContact:searchConditionArray:sortConditionArray:withBlock:">- getDetectBeaconContact:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/registUser:withBlock:">- registUser:withBlock:</option>
+		
+		<option value="//api/name/editUser:withBlock:">- editUser:withBlock:</option>
+		
+		<option value="//api/name/getUser:withBlock:">- getUser:withBlock:</option>
+		
+		<option value="//api/name/getEditUserWebView:withBlock:">- getEditUserWebView:withBlock:</option>
+		
+		<option value="//api/name/editPassword:nowPassword:newPassword:withBlock:">- editPassword:nowPassword:newPassword:withBlock:</option>
+		
+		<option value="//api/name/getEditPasswordWebView:withBlock:">- getEditPasswordWebView:withBlock:</option>
+		
+		<option value="//api/name/registModelChangeCode:withBlock:">- registModelChangeCode:withBlock:</option>
+		
+		<option value="//api/name/registModelChangeCode:password:limitCode:limitMinute:withBlock:">- registModelChangeCode:password:limitCode:limitMinute:withBlock:</option>
+		
+		<option value="//api/name/authModelChange:withBlock:">- authModelChange:withBlock:</option>
+		
+		<option value="//api/name/authModelChange:password:withBlock:">- authModelChange:password:withBlock:</option>
+		
+		<option value="//api/name/userAuth:password:withBlock:">- userAuth:password:withBlock:</option>
+		
+		<option value="//api/name/setLocale:locale:withBlock:">- setLocale:locale:withBlock:</option>
+		
+		<option value="//api/name/getSpotList:sortConditionArray:withBlock:">- getSpotList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getStampRallyList:sortConditionArray:withBlock:">- getStampRallyList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getAllStampRallyList:sortConditionArray:withBlock:">- getAllStampRallyList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getStampRallySpotList:sortConditionArray:withBlock:">- getStampRallySpotList:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getStampRallySpotListByStampRallyId:searchConditionArray:sortConditionArray:withBlock:">- getStampRallySpotListByStampRallyId:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getStampRallySpotListBySpotId:searchConditionArray:sortConditionArray:withBlock:">- getStampRallySpotListBySpotId:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getStampRallySpotListByBeaconId:searchConditionArray:sortConditionArray:withBlock:">- getStampRallySpotListByBeaconId:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/stampComplete:stampRallyId:withBlock:">- stampComplete:stampRallyId:withBlock:</option>
+		
+		<option value="//api/name/addMyStamp:stampRallyId:spotId:withBlock:">- addMyStamp:stampRallyId:spotId:withBlock:</option>
+		
+		<option value="//api/name/getMyStampHistoryList:searchConditionArray:sortConditionArray:withBlock:">- getMyStampHistoryList:searchConditionArray:sortConditionArray:withBlock:</option>
+		
+		<option value="//api/name/getPoint:withBlock:">- getPoint:withBlock:</option>
+		
+		<option value="//api/name/addPoint:point:contactDate:withBlock:">- addPoint:point:contactDate:withBlock:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">RKZService Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>RKZService.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>BaaS@rakuza を利用するためのクラス</p>
+
+<p>BaaS@rakuza から情報の取得や新規登録・更新・削除を行う際に使用します。</p><div class="warning"><p><strong>Warning:</strong> <a href="#//api/name/setTenantKey:">setTenantKey:</a> を実行する前に各APIのメソッド呼び出しを行うと初期化エラーとなります。</p></div>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Properties" name="task_Properties"></a>
+						<h2 class="task-title">Properties</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initialized" title="initialized"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initialized">&nbsp;&nbsp;initialized</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>RKZServiceが初期化されているか</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly, getter=isInitialized) BOOL initialized</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Class Methods" name="task_Class Methods"></a>
+						<h2 class="task-title">Class Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedInstance" title="sharedInstance"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedInstance">+&nbsp;sharedInstance</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>シングルトンクラスのインスタンスを返す</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (RKZService *)sharedInstance</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Instance Methods" name="task_Instance Methods"></a>
+						<h2 class="task-title">Instance Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setTenantKey:" title="setTenantKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTenantKey:">&ndash;&nbsp;setTenantKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>テナント認証を行います。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (RKZResponseStatus *)setTenantKey:(NSString *)<em>tenantKey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tenantKey</code></th>
+						<td><p>契約時に配布したテナントキー(必須)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p><a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> 初期化処理に成功するとisSuccessがYES、失敗するとNOで返却されます。<br >
+通信に成功するとテナント認証情報とシステム情報がUserdefaultsに保存され、 <a href="#//api/name/initialized">isInitialized</a> がYESとなります。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Locale Methods" name="task_Locale Methods"></a>
+						<h2 class="task-title">Locale Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getLocaleList:sortConditionArray:withBlock:" title="getLocaleList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLocaleList:sortConditionArray:withBlock:">&ndash;&nbsp;getLocaleList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楽座に設定されている言語リストを取得する。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getLocaleList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *localeDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZLocaleData.html">RKZLocaleData</a>) <em>localeDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLocale:" title="setLocale:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLocale:">&ndash;&nbsp;setLocale:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SDKに利用する言語情報(NSLocale)を設定します。<br />
+このメソッドにて設定したLocaleに該当するコンテンツがサーバより取得されるようになります。<br /></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLocale:(NSLocale *)<em>locale</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locale</code></th>
+						<td><p>設定するLocaleを指定する。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLocale" title="getLocale"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLocale">&ndash;&nbsp;getLocale</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>SDKに設定されている言語情報(NSLocale)を取得します。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSLocale *)getLocale</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSLocale 設定されているlocale情報</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ObjectData Methods" name="task_ObjectData Methods"></a>
+						<h2 class="task-title">ObjectData Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getData:code:withBlock:" title="getData:code:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getData:code:withBlock:">&ndash;&nbsp;getData:code:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>データオブジェクト取得（キー指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getData:(NSString *)<em>objectId</em> code:(NSString *)<em>code</em> withBlock:(void ( ^ ) ( RKZObjectData *objectData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>オブジェクトID:object_id (必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><p>キーコード:code (必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZObjectData.html">RKZObjectData</a><em> objectData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDataList:searchConditionArray:sortConditionArray:withBlock:" title="getDataList:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDataList:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getDataList:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>データオブジェクト取得（キー指定なし）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDataList:(NSString *)<em>objectId</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *rkzObjectDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>オブジェクトID:object_id (必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(RKZTableData) <em>rkzTableDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addData:withBlock:" title="addData:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addData:withBlock:">&ndash;&nbsp;addData:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>データオブジェクト登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addData:(RKZObjectData *)<em>objectData</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectData</code></th>
+						<td><p>オブジェクトデータ:object_id キーコード:code 名称:name が必須項目です</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/editData:withBlock:" title="editData:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/editData:withBlock:">&ndash;&nbsp;editData:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>データオブジェクト編集</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)editData:(RKZObjectData *)<em>objectData</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectData</code></th>
+						<td><p>オブジェクトデータ:object_id キーコード:code が必須項目です</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteData:code:withBlock:" title="deleteData:code:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteData:code:withBlock:">&ndash;&nbsp;deleteData:code:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>オブジェクトデータ使用不可設定 (<b class="deprecated">Deprecated:</b><span class="deprecated"> このメソッドは deleteData:searchConditions:withBlock: に置き換えられました。</span>)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteData:(NSString *)<em>objectId</em> code:(NSString *)<em>code</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>オブジェクトID(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><p>キーコード:code (必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deleteData:searchConditions:withBlock:" title="deleteData:searchConditions:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deleteData:searchConditions:withBlock:">&ndash;&nbsp;deleteData:searchConditions:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>オブジェクトデータ削除</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)deleteData:(NSString *)<em>objectId</em> searchConditions:(NSMutableArray *)<em>searchConditionArray</em> withBlock:(void ( ^ ) ( NSNumber *deleteCount , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>objectId</code></th>
+						<td><p>オブジェクトID(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="News Methods" name="task_News Methods"></a>
+						<h2 class="task-title">News Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getNews:withBlock:" title="getNews:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNews:withBlock:">&ndash;&nbsp;getNews:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ取得（ニュースID指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNews:(NSString *)<em>newsId</em> withBlock:(void ( ^ ) ( RKZNewsData *newsData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newsId</code></th>
+						<td><p>ニュースID:news_id を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZNewsData.html">RKZNewsData</a> <em>newsData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNews:tenantId:withBlock:" title="getNews:tenantId:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNews:tenantId:withBlock:">&ndash;&nbsp;getNews:tenantId:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ取得（ニュースID指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNews:(NSString *)<em>newsId</em> tenantId:(NSString *)<em>tenantId</em> withBlock:(void ( ^ ) ( RKZNewsData *newsData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newsId</code></th>
+						<td><p>ニュースID:news_id を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tenantId</code></th>
+						<td><p>テナントID:検索対象となるnewsを登録したテナントのIDを指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZNewsData.html">RKZNewsData</a> <em>newsData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getReleasedNewsList:searchConditionArray:sortConditionArray:withBlock:" title="getReleasedNewsList:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getReleasedNewsList:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getReleasedNewsList:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ取得（公開中のみ）（ニュースID未指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getReleasedNewsList:(NSNumber *)<em>limit</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *newsDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>取得件数を指定する(任意) nilを設定した場合は全件取得を行います</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZNewsData.html">RKZNewsData</a>) <em>newsDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNewsList:searchConditionArray:sortConditionArray:withBlock:" title="getNewsList:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNewsList:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getNewsList:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ取得（非公開含む）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNewsList:(NSNumber *)<em>limit</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *newsDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limit</code></th>
+						<td><p>取得件数を指定する(任意) nilを設定した場合は全件取得を行います</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZNewsData.html">RKZNewsData</a>) <em>newsDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNewsReadHistory:userAccessToken:withBlock:" title="getNewsReadHistory:userAccessToken:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNewsReadHistory:userAccessToken:withBlock:">&ndash;&nbsp;getNewsReadHistory:userAccessToken:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ既読情報取得（ニュースID指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNewsReadHistory:(NSString *)<em>newsId</em> userAccessToken:(NSString *)<em>userAccessToken</em> withBlock:(void ( ^ ) ( RKZNewsReadHistoryData *newsReadHistoryData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newsId</code></th>
+						<td><p>ニュースID:news_id を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZNewsReadHistoryData.html">RKZNewsReadHistoryData</a> <em>newsReadHistoryData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNewsReadHistory:tenantId:userAccessToken:withBlock:" title="getNewsReadHistory:tenantId:userAccessToken:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNewsReadHistory:tenantId:userAccessToken:withBlock:">&ndash;&nbsp;getNewsReadHistory:tenantId:userAccessToken:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ既読情報取得（ニュースID指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNewsReadHistory:(NSString *)<em>newsId</em> tenantId:(NSString *)<em>tenantId</em> userAccessToken:(NSString *)<em>userAccessToken</em> withBlock:(void ( ^ ) ( RKZNewsReadHistoryData *newsReadHistoryData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newsId</code></th>
+						<td><p>ニュースID:news_id を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tenantId</code></th>
+						<td><p>テナントID:newsを登録したテナントのIDを指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZNewsReadHistoryData.html">RKZNewsReadHistoryData</a> <em>newsReadHistoryData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getNewsReadHistoryList:withBlock:" title="getNewsReadHistoryList:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNewsReadHistoryList:withBlock:">&ndash;&nbsp;getNewsReadHistoryList:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ既読情報取得（ニュースID未指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getNewsReadHistoryList:(NSString *)<em>userAccessToken</em> withBlock:(void ( ^ ) ( NSMutableArray *newsReadHistoryDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZNewsReadHistoryData.html">RKZNewsReadHistoryData</a>) <em>newsReadHistoryDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registNewsReadHistory:userAccessToken:readDate:withBlock:" title="registNewsReadHistory:userAccessToken:readDate:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registNewsReadHistory:userAccessToken:readDate:withBlock:">&ndash;&nbsp;registNewsReadHistory:userAccessToken:readDate:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ既読情報登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registNewsReadHistory:(NSString *)<em>newsId</em> userAccessToken:(NSString *)<em>userAccessToken</em> readDate:(NSDate *)<em>readDate</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newsId</code></th>
+						<td><p>ニュースID:news_id を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>readDate</code></th>
+						<td><p>日付(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registNewsReadHistory:tenantId:userAccessToken:readDate:withBlock:" title="registNewsReadHistory:tenantId:userAccessToken:readDate:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registNewsReadHistory:tenantId:userAccessToken:readDate:withBlock:">&ndash;&nbsp;registNewsReadHistory:tenantId:userAccessToken:readDate:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>お知らせ既読情報登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registNewsReadHistory:(NSString *)<em>newsId</em> tenantId:(NSString *)<em>tenantId</em> userAccessToken:(NSString *)<em>userAccessToken</em> readDate:(NSDate *)<em>readDate</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newsId</code></th>
+						<td><p>ニュースID:news_id を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tenantId</code></th>
+						<td><p>テナントID:newsを登録したテナントのIDを指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>readDate</code></th>
+						<td><p>日付(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Push Methods" name="task_Push Methods"></a>
+						<h2 class="task-title">Push Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registPushDeviceToken:deviceToken:withBlock:" title="registPushDeviceToken:deviceToken:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registPushDeviceToken:deviceToken:withBlock:">&ndash;&nbsp;registPushDeviceToken:deviceToken:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>プッシュトークン情報登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registPushDeviceToken:(NSString *)<em>userAccessToken</em> deviceToken:(NSString *)<em>deviceToken</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>deviceToken</code></th>
+						<td><p>Push通知デバイストークン を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/> (<a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Coupon Methods" name="task_Coupon Methods"></a>
+						<h2 class="task-title">Coupon Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getCoupon:withBlock:" title="getCoupon:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCoupon:withBlock:">&ndash;&nbsp;getCoupon:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>クーポン取得（単一クーポン）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCoupon:(NSString *)<em>code</em> withBlock:(void ( ^ ) ( RKZCouponData *couponData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>code</code></th>
+						<td><p>クーポンコード:code を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZCouponData.html">RKZCouponData</a>　<em>couponData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCouponList:sortConditionArray:withBlock:" title="getCouponList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCouponList:sortConditionArray:withBlock:">&ndash;&nbsp;getCouponList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>クーポン取得（複数クーポン）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getCouponList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *couponDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZCouponData.html">RKZCouponData</a>)　<em>couponDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/exchangeCoupon:couponCd:quantity:withBlock:" title="exchangeCoupon:couponCd:quantity:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/exchangeCoupon:couponCd:quantity:withBlock:">&ndash;&nbsp;exchangeCoupon:couponCd:quantity:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>クーポン交換</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)exchangeCoupon:(NSString *)<em>userAccessToken</em> couponCd:(NSString *)<em>couponCd</em> quantity:(NSNumber *)<em>quantity</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>couponCd</code></th>
+						<td><p>クーポンコード:code を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>quantity</code></th>
+						<td><p>クーポン枚数:quantity を指定する(任意)
+交換クーポン数が nil もしくは「0」や負数の場合は「1」として処理されます。</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/useMyCoupon:myCouponData:withBlock:" title="useMyCoupon:myCouponData:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/useMyCoupon:myCouponData:withBlock:">&ndash;&nbsp;useMyCoupon:myCouponData:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>クーポン利用</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)useMyCoupon:(NSString *)<em>userAccessToken</em> myCouponData:(RKZMyCouponData *)<em>myCouponData</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>myCouponData</code></th>
+						<td><p>マイクーポンコード:code クーポンコード:coupon_cd を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMyCoupon:myCouponCd:withBlock:" title="getMyCoupon:myCouponCd:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMyCoupon:myCouponCd:withBlock:">&ndash;&nbsp;getMyCoupon:myCouponCd:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>マイクーポン取得（マイクーポン指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMyCoupon:(NSString *)<em>userAccessToken</em> myCouponCd:(NSString *)<em>myCouponCd</em> withBlock:(void ( ^ ) ( RKZMyCouponData *myCouponData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>myCouponCd</code></th>
+						<td><p>マイクーポンコード:code を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZMyCouponData.html">RKZMyCouponData</a> <em>myCouponData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMyCouponList:searchConditionArray:sortConditionArray:withBlock:" title="getMyCouponList:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMyCouponList:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getMyCouponList:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>マイクーポン取得（マイクーポン指定なし）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMyCouponList:(NSString *)<em>userAccessToken</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *myCouponDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZMyCouponData.html">RKZMyCouponData</a>) <em>myCouponDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Contact Methods" name="task_Contact Methods"></a>
+						<h2 class="task-title">Contact Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getContactList:searchConditionArray:sortConditionArray:withBlock:" title="getContactList:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getContactList:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getContactList:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>コンタクト履歴一覧取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getContactList:(NSString *)<em>userAccessToken</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *contactDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>取得するユーザーのアクセストークン</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZContactData.html">RKZContactData</a>) <em>contactDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addContact:contactData:withBlock:" title="addContact:contactData:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addContact:contactData:withBlock:">&ndash;&nbsp;addContact:contactData:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>コンタクトの登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addContact:(NSString *)<em>userAccessToken</em> contactData:(RKZContactData *)<em>contactData</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>登録するユーザーのアクセストークン</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contactData</code></th>
+						<td><p>登録するコンタクトデータ</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="ApplicationConfig Methods" name="task_ApplicationConfig Methods"></a>
+						<h2 class="task-title">ApplicationConfig Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getApplicationSettingDataWithBlock:" title="getApplicationSettingDataWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getApplicationSettingDataWithBlock:">&ndash;&nbsp;getApplicationSettingDataWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>アプリケーション設定情報取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getApplicationSettingDataWithBlock:(void ( ^ ) ( RKZApplicationConfigData *applicationConfigData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZApplicationConfigData.html">RKZApplicationConfigData</a> <em>applicationConfigData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="GetSystemDate Methods" name="task_GetSystemDate Methods"></a>
+						<h2 class="task-title">GetSystemDate Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getSystemDateWithBlock:" title="getSystemDateWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSystemDateWithBlock:">&ndash;&nbsp;getSystemDateWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楽座システム日付取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSystemDateWithBlock:(void ( ^ ) ( NSDate *rakuzaSystemDate , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSDate <em>rakuzaSystemDate, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSystemDateStrWithBlock:" title="getSystemDateStrWithBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSystemDateStrWithBlock:">&ndash;&nbsp;getSystemDateStrWithBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楽座システム日付取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSystemDateStrWithBlock:(void ( ^ ) ( NSString *rakuzaSystemDateStr , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSString <em>rakuzaSystemDateStr, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSystemDate" title="getSystemDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSystemDate">&ndash;&nbsp;getSystemDate</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楽座システム日付取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSDate *)getSystemDate</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>楽座システム日付
+通信に失敗するとnilを返却する。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSystemDateStr" title="getSystemDateStr"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSystemDateStr">&ndash;&nbsp;getSystemDateStr</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>楽座システム日付取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getSystemDateStr</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>楽座システム日付
+通信に失敗するとnilを返却する。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Beacon Methods" name="task_Beacon Methods"></a>
+						<h2 class="task-title">Beacon Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getBeaconList:sortConditionArray:withBlock:" title="getBeaconList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBeaconList:sortConditionArray:withBlock:">&ndash;&nbsp;getBeaconList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ビーコン情報取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getBeaconList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *beaconDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZBeaconData.html">RKZBeaconData</a>) <em>beaconDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getBeaconSpotList:sortConditionArray:withBlock:" title="getBeaconSpotList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getBeaconSpotList:sortConditionArray:withBlock:">&ndash;&nbsp;getBeaconSpotList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ビーコンスポット情報取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getBeaconSpotList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *beaconSpotDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZBeaconSpotData.html">RKZBeaconSpotData</a>) <em>beaconSpotDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> ビーコンスポットに紐づくビーコンIDを検索条件に指定する場合、検索条件タイプ:RKZSearchConditionLikeOr ,検索項目名:&ldquo;beacon&rdquo; でビーコンIDを指定してください。</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addDetectBeaconContact:beaconId:contactDate:beaconSpotCd:rssi:remarks:withBlock:" title="addDetectBeaconContact:beaconId:contactDate:beaconSpotCd:rssi:remarks:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addDetectBeaconContact:beaconId:contactDate:beaconSpotCd:rssi:remarks:withBlock:">&ndash;&nbsp;addDetectBeaconContact:beaconId:contactDate:beaconSpotCd:rssi:remarks:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ビーコン検知コンタクト追加</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addDetectBeaconContact:(NSString *)<em>userAccessToken</em> beaconId:(NSString *)<em>beaconId</em> contactDate:(NSDate *)<em>contactDate</em> beaconSpotCd:(NSString *)<em>beaconSpotCd</em> rssi:(NSString *)<em>rssi</em> remarks:(NSString *)<em>remarks</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beaconId</code></th>
+						<td><p>ビーコンID:beacon_id を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contactDate</code></th>
+						<td><p>ビーコン検知コンタクト日時（日付型）:contactDate を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beaconSpotCd</code></th>
+						<td><p>スポットコード:beacon_spot_cd を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>rssi</code></th>
+						<td><p>RSSI:rssi を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>remarks</code></th>
+						<td><p>備考:remarks を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDetectBeaconContact:searchConditionArray:sortConditionArray:withBlock:" title="getDetectBeaconContact:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDetectBeaconContact:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getDetectBeaconContact:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ビーコン検知コンタクト取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getDetectBeaconContact:(NSString *)<em>userAccessToken</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *detectBeaconContactArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(RKZDetectBeaconContactData)　<em>detectBeaconContactArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="User Methods" name="task_User Methods"></a>
+						<h2 class="task-title">User Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/registUser:withBlock:" title="registUser:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registUser:withBlock:">&ndash;&nbsp;registUser:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ユーザー登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registUser:(RKZUserData *)<em>userData</em> withBlock:(void ( ^ ) ( RKZUserData *userData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userData</code></th>
+						<td><p>登録するユーザー情報(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZUserData.html">RKZUserData</a> <em>userData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/editUser:withBlock:" title="editUser:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/editUser:withBlock:">&ndash;&nbsp;editUser:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ユーザー編集</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)editUser:(RKZUserData *)<em>userData</em> withBlock:(void ( ^ ) ( RKZUserData *userData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userData</code></th>
+						<td><p>編集するユーザー情報 user_access_token を使用する</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br />(UserData<em> userData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus)
+通信に成功するとユーザーモデル:userDataが返却され、通信に失敗すると楽座エラー:rakuzaErrorが返却される。</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUser:withBlock:" title="getUser:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUser:withBlock:">&ndash;&nbsp;getUser:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ユーザー情報取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getUser:(NSString *)<em>userAccessToken</em> withBlock:(void ( ^ ) ( RKZUserData *userData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZUserData.html">RKZUserData</a> <em>userData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEditUserWebView:withBlock:" title="getEditUserWebView:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEditUserWebView:withBlock:">&ndash;&nbsp;getEditUserWebView:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ユーザー編集WebView取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getEditUserWebView:(RKZUserData *)<em>userData</em> withBlock:(void ( ^ ) ( RKZUserEditWebView *userEditWebView , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userData</code></th>
+						<td><p>編集するユーザー情報 user_access_token を使用する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>必須チェック後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZUserEditWebView.html">RKZUserEditWebView</a> <em>userEditWebView, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/RKZUserEditWebView.html#//api/name/startWebView">[RKZUserEditWebView startWebView]</a> を実行すると WebView が開始されます。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/editPassword:nowPassword:newPassword:withBlock:" title="editPassword:nowPassword:newPassword:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/editPassword:nowPassword:newPassword:withBlock:">&ndash;&nbsp;editPassword:nowPassword:newPassword:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>利用者のパスワード情報を変更する。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)editPassword:(NSString *)<em>userAccessToken</em> nowPassword:(NSString *)<em>nowPassword</em> newPassword:(NSString *)<em>newPassword</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>nowPassword</code></th>
+						<td><p>現在のパスワード(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newPassword</code></th>
+						<td><p>新パスワード(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Constants/RKZApiStatusCode.html">RKZApiStatusCode</a> statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getEditPasswordWebView:withBlock:" title="getEditPasswordWebView:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getEditPasswordWebView:withBlock:">&ndash;&nbsp;getEditPasswordWebView:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>パスワード変更WebView取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getEditPasswordWebView:(NSString *)<em>userAccessToken</em> withBlock:(void ( ^ ) ( RKZEditPasswordWebView *editPasswordWebView , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>必須チェック後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZEditPasswordWebView.html">RKZEditPasswordWebView</a> <em>editPasswordWebView, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="../Classes/RKZEditPasswordWebView.html#//api/name/startWebView">[RKZEditPasswordWebView startWebView]</a> を実行すると WebView が開始されます。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registModelChangeCode:withBlock:" title="registModelChangeCode:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registModelChangeCode:withBlock:">&ndash;&nbsp;registModelChangeCode:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>機種変更コードを発行する。(パラメータ単数)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registModelChangeCode:(NSString *)<em>userAccessToken</em> withBlock:(void ( ^ ) ( NSString *modelChangeCode , NSDate *limitDate , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSString <em>modelChangeCode, NSDate </em>limitDate, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registModelChangeCode:password:limitCode:limitMinute:withBlock:" title="registModelChangeCode:password:limitCode:limitMinute:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registModelChangeCode:password:limitCode:limitMinute:withBlock:">&ndash;&nbsp;registModelChangeCode:password:limitCode:limitMinute:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>機種変更認証コードを発行する。(パラメータ複数)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registModelChangeCode:(NSString *)<em>userAccessToken</em> password:(NSString *)<em>password</em> limitCode:(NSNumber *)<em>limitCode</em> limitMinute:(NSNumber *)<em>limitMinute</em> withBlock:(void ( ^ ) ( NSString *modelChangeCode , NSDate *limitDate , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>パスワード</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limitCode</code></th>
+						<td><p>桁数</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>limitMinute</code></th>
+						<td><p>有効時間(分)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSString <em>modelChangeCode, NSDate </em>limitDate, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> *responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authModelChange:withBlock:" title="authModelChange:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authModelChange:withBlock:">&ndash;&nbsp;authModelChange:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>機種変更の認証を行う。(パラメータ単数)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authModelChange:(NSString *)<em>modelChangeCode</em> withBlock:(void ( ^ ) ( RKZUserData *userData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>modelChangeCode</code></th>
+						<td><p>認証コード</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZUserData.html">RKZUserData</a><em> userData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/authModelChange:password:withBlock:" title="authModelChange:password:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/authModelChange:password:withBlock:">&ndash;&nbsp;authModelChange:password:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>機種変更の認証を行う。(パラメータ複数)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)authModelChange:(NSString *)<em>modelChangeCode</em> password:(NSString *)<em>password</em> withBlock:(void ( ^ ) ( RKZUserData *userData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>modelChangeCode</code></th>
+						<td><p>認証コード</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>パスワード</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZUserData.html">RKZUserData</a><em> userData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userAuth:password:withBlock:" title="userAuth:password:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userAuth:password:withBlock:">&ndash;&nbsp;userAuth:password:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ログインを行う。</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)userAuth:(NSString *)<em>loginId</em> password:(NSString *)<em>password</em> withBlock:(void ( ^ ) ( RKZUserData *userData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>loginId</code></th>
+						<td><p>ログインID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>パスワード</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZUserData.html">RKZUserData</a><em> userData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setLocale:locale:withBlock:" title="setLocale:locale:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setLocale:locale:withBlock:">&ndash;&nbsp;setLocale:locale:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>使用言語登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setLocale:(NSString *)<em>userAccessToken</em> locale:(NSLocale *)<em>locale</em> withBlock:(void ( ^ ) ( NSLocale *updateLocale , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>使用言語を登録するユーザーアクセストークン(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locale</code></th>
+						<td><p>登録する言語情報(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>登録処理後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSLocale <em>updateLocale, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>パラメータで指定されたの言語情報をサーバーに登録する。<br />
+送信された言語情報より、BaaSにて利用可能な言語か判定して、利用可能な言語の場合はその言語情報を登録する。<br />
+利用できない言語情報だった場合、BaaSにて利用可能な言語に置き換えた結果を登録する。置き換えた言語情報は復帰値として返却される。<br />
+楽座にて利用可能な言語が特定できない場合は、null でサーバーに登録される。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Spot Methods" name="task_Spot Methods"></a>
+						<h2 class="task-title">Spot Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getSpotList:sortConditionArray:withBlock:" title="getSpotList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSpotList:sortConditionArray:withBlock:">&ndash;&nbsp;getSpotList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スポット情報取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getSpotList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *spotDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZSpotData.html">RKZSpotData</a>) <em>spotDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="StampRally Methods" name="task_StampRally Methods"></a>
+						<h2 class="task-title">StampRally Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getStampRallyList:sortConditionArray:withBlock:" title="getStampRallyList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStampRallyList:sortConditionArray:withBlock:">&ndash;&nbsp;getStampRallyList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプラリー一覧取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getStampRallyList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *stampRallyDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZStampRallyData.html">RKZStampRallyData</a>) <em>stampRallyDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>スタンプラリー情報を取得します。このメソッドでは開催期間に当てはまるスタンプラリー情報のみを取得します。
+searchConditionArrayに開催日時の条件を追加して検索できます。 (開催日時の検索条件は無効になります。)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllStampRallyList:sortConditionArray:withBlock:" title="getAllStampRallyList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllStampRallyList:sortConditionArray:withBlock:">&ndash;&nbsp;getAllStampRallyList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプラリー一覧取得 (全件取得)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAllStampRallyList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *stampRallyDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZStampRallyData.html">RKZStampRallyData</a>) <em>stampRallyDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>スタンプラリー情報を取得します。このメソッドでは開催日時を無視して開催が終了している or 未来日に開催される情報もすべて取得します。
+searchConditionArrayに開催日時の条件を追加して検索できます。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getStampRallySpotList:sortConditionArray:withBlock:" title="getStampRallySpotList:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStampRallySpotList:sortConditionArray:withBlock:">&ndash;&nbsp;getStampRallySpotList:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプラリースポット一覧取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getStampRallySpotList:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *stampRallySpotDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZStampRallySpotData.html">RKZStampRallySpotData</a>) <em>stampRallySpotDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>開催期間中のスタンプラリーを判断して、開催中のスタンプラリーに該当するスポットの一覧を取得する。</p>
+
+<p>searchConditionArray, sortConditionArrayで指定できる項目は「スタンプラリースポット」の項目が対象で、
+スタンプラリー、スポットの項目での検索・並び替えは行えない。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getStampRallySpotListByStampRallyId:searchConditionArray:sortConditionArray:withBlock:" title="getStampRallySpotListByStampRallyId:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStampRallySpotListByStampRallyId:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getStampRallySpotListByStampRallyId:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプラリースポット一覧取得 (スタンプラリーID指定)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getStampRallySpotListByStampRallyId:(NSString *)<em>stampRallyId</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *stampRallySpotDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stampRallyId</code></th>
+						<td><p>スタンプラリーID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZStampRallySpotData.html">RKZStampRallySpotData</a>) <em>stampRallySpotDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>開催期間中のスタンプラリーの判断は行わず、指定されたスタンプラリーIDに該当する情報を取得する。</p>
+
+<p>searchConditionArray, sortConditionArrayで指定できる項目は「スタンプラリースポット」の項目が対象。
+スタンプラリー、スポットの項目での検索・並び替えは行えない。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getStampRallySpotListBySpotId:searchConditionArray:sortConditionArray:withBlock:" title="getStampRallySpotListBySpotId:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStampRallySpotListBySpotId:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getStampRallySpotListBySpotId:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプラリーポット一覧取得（スポットID指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getStampRallySpotListBySpotId:(NSString *)<em>spotId</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *stampRallySpotDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>spotId</code></th>
+						<td><p>スポットID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZStampRallySpotData.html">RKZStampRallySpotData</a>) <em>stampRallySpotDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>開催期間中のスタンプラリーを判断して、開催中のスタンプラリーに該当するスポットの一覧を取得する。</p>
+
+<p>searchConditionArray, sortConditionArrayで指定できる項目は「スタンプラリースポット」の項目が対象。
+スタンプラリー、スポットの項目での検索・並び替えは行えない。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getStampRallySpotListByBeaconId:searchConditionArray:sortConditionArray:withBlock:" title="getStampRallySpotListByBeaconId:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStampRallySpotListByBeaconId:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getStampRallySpotListByBeaconId:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプラリーポット一覧取得（ビーコンID指定）</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getStampRallySpotListByBeaconId:(NSString *)<em>beaconId</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *stampRallySpotDataArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beaconId</code></th>
+						<td><p>検知したBeaconId</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZStampRallySpotData.html">RKZStampRallySpotData</a>) <em>stampRallySpotDataArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>開催期間中のスタンプラリーを判断して、開催中のスタンプラリーに該当するスポットの一覧を取得する。</p>
+
+<p>searchConditionArray, sortConditionArrayで指定できる項目は「スタンプラリースポット」の項目が対象。
+スタンプラリー、スポットの項目での検索・並び替えは行えない。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stampComplete:stampRallyId:withBlock:" title="stampComplete:stampRallyId:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stampComplete:stampRallyId:withBlock:">&ndash;&nbsp;stampComplete:stampRallyId:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプコンプリート設定</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)stampComplete:(NSString *)<em>userAccessToken</em> stampRallyId:(NSString *)<em>stampRallyId</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stampRallyId</code></th>
+						<td><p>スタンプラリーID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a>) <em>statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>開催されているスタンプラリーで、コンプリートした状態に登録する。
+コンプリートしたかどうかを自動で判定するのではなく、コンプリートした状態として登録する場合、当APIを呼び出す。
+(コンプリートしたかどうかの判定は各自実装して判定する)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addMyStamp:stampRallyId:spotId:withBlock:" title="addMyStamp:stampRallyId:spotId:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addMyStamp:stampRallyId:spotId:withBlock:">&ndash;&nbsp;addMyStamp:stampRallyId:spotId:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>取得スタンプ登録</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addMyStamp:(NSString *)<em>userAccessToken</em> stampRallyId:(NSString *)<em>stampRallyId</em> spotId:(NSString *)<em>spotId</em> withBlock:(void ( ^ ) ( RKZApiStatusCode statusCode , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>登録するユーザーのアクセストークン</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>stampRallyId</code></th>
+						<td><p>スタンプを取得したスタンプラリーのID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>spotId</code></th>
+						<td><p>スタンプを取得したスポットID</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(<a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a>) <em>statusCode, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>スタンプ取得履歴を登録します。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMyStampHistoryList:searchConditionArray:sortConditionArray:withBlock:" title="getMyStampHistoryList:searchConditionArray:sortConditionArray:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMyStampHistoryList:searchConditionArray:sortConditionArray:withBlock:">&ndash;&nbsp;getMyStampHistoryList:searchConditionArray:sortConditionArray:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>スタンプ取得情報取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getMyStampHistoryList:(NSString *)<em>userAccessToken</em> searchConditionArray:(NSMutableArray *)<em>searchConditionArray</em> sortConditionArray:(NSMutableArray *)<em>sortConditionArray</em> withBlock:(void ( ^ ) ( NSMutableArray *myStampRallyArray , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>登録するユーザーのアクセストークン</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>searchConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSearchCondition.html">RKZSearchCondition</a>) 取得する情報の検索条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sortConditionArray</code></th>
+						<td><p>NSMutableArray(<a href="../Classes/RKZSortCondition.html">RKZSortCondition</a>) 取得する情報のソート条件を指定する(任意)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( NSMutableArray(RKZMyStampHistory) <em>myStampHistoryArray, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>スタンプの取得状況を取得します。</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Point Methods" name="task_Point Methods"></a>
+						<h2 class="task-title">Point Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getPoint:withBlock:" title="getPoint:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPoint:withBlock:">&ndash;&nbsp;getPoint:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>所持ポイント情報取得</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getPoint:(NSString *)<em>userAccessToken</em> withBlock:(void ( ^ ) ( RKZPointData *pointData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZPointData.html">RKZPointData</a> <em>pointData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addPoint:point:contactDate:withBlock:" title="addPoint:point:contactDate:withBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addPoint:point:contactDate:withBlock:">&ndash;&nbsp;addPoint:point:contactDate:withBlock:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>ポイント加算減算</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addPoint:(NSString *)<em>userAccessToken</em> point:(NSNumber *)<em>point</em> contactDate:(NSDate *)<em>contactDate</em> withBlock:(void ( ^ ) ( RKZPointData *pointData , RKZResponseStatus *responseStatus ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>userAccessToken</code></th>
+						<td><p>ユーザーアクセストークン:user_access_token を指定する(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>point</code></th>
+						<td><p>加算減算を行うポイント数:point(必須)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contactDate</code></th>
+						<td><p>コンタクト日: contact_date を指定 (yyyy-MM-dd hh:mm:ss)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( <a href="../Classes/RKZPointData.html">RKZPointData</a> <em>pointData, <a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a> </em>responseStatus )</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">RKZService.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 People Software Corporation. All rights reserved. Updated: 2017-02-01</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

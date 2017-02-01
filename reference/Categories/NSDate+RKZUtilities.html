@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NSDate(RKZUtilities) Category Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">BaaSAtRakuza </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">People Software Corporation</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/getDatetimeFromRakuzaStr:existsSecond:">+ getDatetimeFromRakuzaStr:existsSecond:</option>
+		
+		<option value="//api/name/getDateFromRakuzaStr:">+ getDateFromRakuzaStr:</option>
+		
+		<option value="//api/name/getRakuzaStrFromDatetime:existsSecond:">+ getRakuzaStrFromDatetime:existsSecond:</option>
+		
+		<option value="//api/name/getRakuzaStrFromDate:">+ getRakuzaStrFromDate:</option>
+		
+	</optgroup>
+	
+
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">NSDate(RKZUtilities) Category Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Declared in</th>
+	<td>NSDate+RKZUtilities.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>楽座の日時形式（YYYY-MM-dd HH:mm:ss）に対応した NSDate 拡張カテゴリ</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						<a title="Class Methods" name="task_Class Methods"></a>
+						
+<h2 class="task-title">Class Methods</h2>
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getDatetimeFromRakuzaStr:existsSecond:" title="getDatetimeFromRakuzaStr:existsSecond:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDatetimeFromRakuzaStr:existsSecond:">+&nbsp;getDatetimeFromRakuzaStr:existsSecond:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>（BaaS@rakuza）楽座形式の日時文字列をNSDateに変換する(YYYY-MM-dd HH:mm:ss)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDate *)getDatetimeFromRakuzaStr:(NSString *)<em>str</em> existsSecond:(BOOL)<em>existsSecond</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>str</code></th>
+						<td><p>日時文字列</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>existsSecond</code></th>
+						<td><p>日時文字列にssが存在するか</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSDateに変換した日時情報<br/>
+existsSecondがYESの場合はssを含めた日時情報を返し、NOの場合はssを含めない</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+RKZUtilities.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDateFromRakuzaStr:" title="getDateFromRakuzaStr:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDateFromRakuzaStr:">+&nbsp;getDateFromRakuzaStr:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>（BaaS@rakuza）楽座形式の日付文字列をNSDateに変換する(YYYY-MM-dd)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSDate *)getDateFromRakuzaStr:(NSString *)<em>str</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>str</code></th>
+						<td><p>日付文字列</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSDateに変換した日付情報</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+RKZUtilities.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRakuzaStrFromDatetime:existsSecond:" title="getRakuzaStrFromDatetime:existsSecond:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRakuzaStrFromDatetime:existsSecond:">+&nbsp;getRakuzaStrFromDatetime:existsSecond:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>（BaaS@rakuza）NSDateを楽座形式の日時文字列(YYYY-MM-dd HH:mm:ss)に変換する</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getRakuzaStrFromDatetime:(NSDate *)<em>datetime</em> existsSecond:(BOOL)<em>existsSecond</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>datetime</code></th>
+						<td><p>日時情報</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>existsSecond</code></th>
+						<td><p>日時文字列にssが存在するか</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSString NSDateから変換した日時文字列(YYYY-MM-dd HH:mm:ss)<br/>
+existsSecondがYESの場合はssを含めた文字列を返し、NOの場合はssを含めない</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+RKZUtilities.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getRakuzaStrFromDate:" title="getRakuzaStrFromDate:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getRakuzaStrFromDate:">+&nbsp;getRakuzaStrFromDate:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>（BaaS@rakuza）NSDateを楽座形式の日付文字列(YYYY-MM-dd)に変換する</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (NSString *)getRakuzaStrFromDate:(NSDate *)<em>date</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>date</code></th>
+						<td><p>日付情報</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSString NSDateから変換した日付文字列(YYYY-MM-dd)</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">NSDate+RKZUtilities.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 People Software Corporation. All rights reserved. Updated: 2017-02-01</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>
