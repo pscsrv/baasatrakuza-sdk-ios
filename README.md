@@ -11,6 +11,7 @@ BaaS@rakuzaのご利用については [BaaS@rakuza製品サイト](http://www.r
 
 BaaS@rakuza SDK バージョン|BaaS@rakuza バージョン|
 |:-:|:-:|
+|2.0.1|2.0.0|
 |2.0.0|2.0.0|
 
 
