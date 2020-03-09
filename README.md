@@ -11,12 +11,30 @@ BaaS@rakuzaのご利用については [BaaS@rakuza製品サイト](http://www.r
 
 BaaS@rakuza SDK バージョン|BaaS@rakuza バージョン|
 |:-:|:-:|
-|:new: 2.2.2|2.3.x, 2.4.x, 2.5.x|
+|:new: 2.3.0|2.3.x, 2.4.x, 2.5.x|
+|2.2.2|2.3.x, 2.4.x, 2.5.x|
 |2.2.1|2.3.x, 2.4.x, 2.5.x|
 |2.2.0|2.3.x, 2.4.x, 2.5.x|
 |2.1.0|2.1.0, 2.2.0|
 |2.0.1|2.0.0|
 |2.0.0|2.0.0|
+
+
+## Ver2.3.0でWKWebViewに対応しました。
+
+UIWebViewを利用している場合、以下の日程でApp Storeでアプリ申請を受け付けてくれなくなります。
+
+* 新規リリース　→**2020/04**
+* アップデート　→**2020/12**
+
+参考サイト：  
+
+* [https://developer.apple.com/news/?id=12232019b](https://developer.apple.com/news/?id=12232019b)
+* [2020年4月以降のiOSアプリ申請について](https://qiita.com/keeey/items/d591aa212992b3281458#wkwebview-%E5%AF%BE%E5%BF%9C)
+
+Ver2.3.0にて、`UIWebView` の利用を廃止し、 `WKWebView`に対応しました。  
+BaaS@rakuzaにて、iOSアプリケーションを作成する場合は、Ver2.3.0を利用して下さい。  
+また、既に公開されているアプリケーションの場合は、 Ver2.3.0への差し替えをお願いします。
 
 
 ## インストール方法
