@@ -21,7 +21,7 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          BaaSAtRakuza 3.0.0 Docs
+          BaaSAtRakuza 3.1.0 Docs
         </a>
         
       </p>
@@ -6751,6 +6751,72 @@ visibleOnlyを指定することで、表示、非表示の項目の取得が切
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/c:objc(cs)RKZService(im)deleteAllData:withBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-deleteAllData:withBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RKZService(im)deleteAllData:withBlock:">-deleteAllData:<wbr>withBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>オブジェクトデータ全件削除</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">deleteAllData</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">objectId</span>
+            <span class="nf">withBlock</span><span class="p">:(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSNumber</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                        <span class="n"><a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteAllData</span><span class="p">(</span><span class="n">_</span> <span class="nv">objectId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">NSNumber</span><span class="p">,</span> <span class="kt"><a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>objectId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>オブジェクトID(必須)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>通信後にblockが実行される。 blockは次の引数のシグネチャを持つ<br/>
+( RKZApiStatusCode statusCode, RKZResponseStatus *responseStatus )</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/c:objc(cs)RKZService(im)getDataWithRelationObjects:code:withBlock:"></a>
                     <a name="//apple_ref/objc/Method/-getDataWithRelationObjects:code:withBlock:" class="dashAnchor"></a>
                     <a class="token" href="#/c:objc(cs)RKZService(im)getDataWithRelationObjects:code:withBlock:">-getDataWithRelationObjects:<wbr>code:<wbr>withBlock:<wbr></a>
@@ -11913,6 +11979,85 @@ searchConditionArrayに開催日時の条件を追加して検索できます。
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)RKZService(im)deleteAllUserDetail:userAccessToken:withBlock:"></a>
+                    <a name="//apple_ref/objc/Method/-deleteAllUserDetail:userAccessToken:withBlock:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)RKZService(im)deleteAllUserDetail:userAccessToken:withBlock:">-deleteAllUserDetail:<wbr>userAccessToken:<wbr>withBlock:<wbr></a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>すべてのユーザー詳細を削除</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">deleteAllUserDetail</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">objectId</span>
+            <span class="nf">userAccessToken</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">userAccessToken</span>
+                  <span class="nf">withBlock</span><span class="p">:</span>
+                      <span class="p">(</span><span class="n">nonnull</span> <span class="kt">void</span> <span class="p">(</span><span class="o">^</span><span class="p">)(</span><span class="n">NSNumber</span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">,</span>
+                                        <span class="n"><a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a></span> <span class="o">*</span><span class="n">_Nonnull</span><span class="p">))</span><span class="n">block</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deleteAllUserDetail</span><span class="p">(</span><span class="n">_</span> <span class="nv">objectId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">userAccessToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">with</span> <span class="nv">block</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">NSNumber</span><span class="p">,</span> <span class="kt"><a href="../Classes/RKZResponseStatus.html">RKZResponseStatus</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>objectId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>オブジェクトID(必須)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userAccessToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ユーザーアクセストークン(必須)</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>block</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>通信後にblockが実行される</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
@@ -11921,8 +12066,8 @@ searchConditionArrayに開催日時の条件を追加して検索できます。
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2022 <a class="link" href="https://www.raku-za.jp/baas/" target="_blank" rel="external noopener">People Software Corporation</a>. All rights reserved. (Last updated: 2022-02-23)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
+      <p>&copy; 2022 <a class="link" href="https://www.raku-za.jp/baas/" target="_blank" rel="external noopener">People Software Corporation</a>. All rights reserved. (Last updated: 2022-09-26)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.14.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
     </section>
   </body>
 </html>
