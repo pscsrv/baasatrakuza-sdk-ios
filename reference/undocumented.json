@@ -1,208 +1,208 @@
 {
   "warnings": [
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 22,
       "symbol": "RKZLocaleData.code",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 24,
       "symbol": "RKZLocaleData.name",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 26,
       "symbol": "RKZLocaleData.default_flg",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 28,
       "symbol": "RKZLocaleData.language_cd",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 30,
       "symbol": "RKZLocaleData.language_name",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 32,
       "symbol": "RKZLocaleData.locale",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 38,
       "symbol": "RKZLocaleData.not_use_flg",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocaleData.h",
       "line": 41,
       "symbol": "RKZLocaleData.attributes",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocation.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocation.h",
       "line": 29,
       "symbol": "RKZLocation.-initWithResultSet:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocation.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZLocation.h",
       "line": 31,
       "symbol": "RKZLocation.-initWithLatitude:longitude:range:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZNewsExtensionAttribute.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZNewsExtensionAttribute.h",
       "line": 36,
       "symbol": "RKZNewsExtensionAttribute.-createExtensionAttribute",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZObjectDataExtensionAttribute.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZObjectDataExtensionAttribute.h",
       "line": 37,
       "symbol": "RKZObjectDataExtensionAttribute.-createExtensionAttribute",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZPagingData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZPagingData.h",
       "line": 14,
       "symbol": "RKZPagingData",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZPagingData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZPagingData.h",
       "line": 26,
       "symbol": "RKZPagingData.+initWithLimit:offset:resultCount:datas:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
       "line": 14,
       "symbol": "FavoriteForSearchCondition",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
       "line": 15,
       "symbol": "FavoriteForSearchCondition.type",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
       "line": 18,
       "symbol": "ReadedNewsForSearchCondition",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.class",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
       "line": 19,
       "symbol": "ReadedNewsForSearchCondition.type",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
       "line": 174,
       "symbol": "RKZSearchCondition.with_favorite",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSearchCondition.h",
       "line": 176,
       "symbol": "RKZSearchCondition.readed_news",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSpotData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSpotData.h",
       "line": 53,
       "symbol": "RKZSpotData.pixel_position_x",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSpotData.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZSpotData.h",
       "line": 55,
       "symbol": "RKZSpotData.pixel_position_y",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZUserDetailExtensionAttribute.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Model/RKZUserDetailExtensionAttribute.h",
       "line": 25,
       "symbol": "RKZUserDetailExtensionAttribute.-createExtensionAttribute",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
       "line": 54,
       "symbol": "RKZService.manager",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.ivar",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
       "line": 63,
       "symbol": "RKZService._timeout",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.property",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
       "line": 88,
       "symbol": "RKZService.-setDefaultTimeout:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
       "line": 90,
       "symbol": "RKZService.-setTimeout:",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
-      "line": 502,
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Service/RKZService.h",
+      "line": 511,
       "symbol": "RKZService(Locale)",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Util/NSData+RKZUtilities.h",
+      "file": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev/BaaSAtRakuza/Util/NSData+RKZUtilities.h",
       "line": 14,
       "symbol": "NSData(RKZUtilities)",
       "symbol_kind": "sourcekitten.source.lang.objc.decl.category",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/kishino/AppCodeProjects/baasatrakuza-sdk-ios-dev"
+  "source_directory": "/Users/y-shigemitsu/Documents/10_BaaS@rakuza/20_src/sdk/baasatrakuza-sdk-ios-dev"
 }
