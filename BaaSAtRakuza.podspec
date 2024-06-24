@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "BaaSAtRakuza"
-  spec.version = "3.2.0"
+  spec.version = "3.3.0"
   spec.summary = "BaaS@rakuza SDK for iOS"
   spec.description = <<-DESC
   BaaS@rakuzaをiOSより利用するためのSDKです。
